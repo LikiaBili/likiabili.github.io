@@ -1,13 +1,57 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Oxygen:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
-    <title>LikiaStudios</title>
-    <link rel="stylesheet" href="hub.css">
-  </head>
-  <body>
-    <h1>Likia Studios</h1>
-    <p class="introtext">This is Likia Studios's official website</p>
-    <p class="introtext">We are currently under maintence, Expected to complete on November with a brand new look!</p>
-  </body>
+    <meta charset="UTF-8">
+    <title>Code Clicker</title>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--The following div with id="LoadingScreen" should be removed when the script is done loading-->
+    <div style="width: 100%;height: 100%;position: absolute;background-color: black;z-index: 1000;" id="LoadingScreen">
+        <h1 style="text-align: center;margin: auto;">L0ading...</h1>
+        <h1 style="text-align: center;margin: auto;">If this dosent load shortly, check if your javascript is enabled</h1>
+    </div>
+
+    <p style="position: absolute;bottom: 0;left:0;">Really Early Indev v0.1 (Your game do not save!) <a href="../index.html">Back</a></p>
+    <div class="leftBlock">
+        <div class="mainbar">
+            <p class="midtext" id="bytesDisplay">0 bytes</p>
+            <p class="smltext" id="linesDisplay">0 lines</p>
+            <p class="smltext" id="bpsDisplay"></p>
+        </div>
+        <div class="center">
+            <img for="console" src="img/console.png" class="console" onclick="handleClick()" id="console">
+        </div>
+    </div>
+    <div class="middleBlock">
+    </div>
+    <div class="rightBlock">
+        <p class="rightBigText">Buildings</p>
+        <div class="buildingBlock" onclick="buyBuilding('keyboard')">
+            <img class="buildingIcon" src="img/buildings/keyboard.png">
+            <div class="buildingTextBox">
+                <p class="buildingTitle">Keyboard</p>
+                <p class="buildingDesc">15bytes</p>
+                <p class="buildingDesc">0.1bps</p>
+            </div>
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+    </div>
+</body>
 </html>
