@@ -122,3 +122,13 @@ p.buildingDesc{
     color: white;
     font-size: 12px;
 }
+div.hoverTooltip{
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 8px;
+    border-width: 2px;
+    border-color: white;
+}
