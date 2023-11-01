@@ -20,6 +20,7 @@ var hoverMessages = {
                desc:"A nice programmer to write more code.<br>Making ${buildings['programmer']['bps'] * buildings['programmer']['amount']}<br>Produce: ${buildings['programmer']['bps']} bytes per second"};
     }}};
 let hovering = 0;
+let hoverDisplayElement = document.getElementById('hoverTooltip');
 
 function handleClick() {
     codes = codes + 1;
@@ -27,6 +28,14 @@ function handleClick() {
     bigConsole.style.width = 200;
     bigConsole.style.height = 200;
     bigConsole.style.marginTop = 50;
+}
+function hoverIn(id){
+  hovering = id;
+}
+function hoverOut(id){
+  if(hovering == id){
+    hovering = 0;
+  }
 }
 
 function buildingUpdate(){ 
@@ -55,7 +64,7 @@ function tenPerSecondUpdate(){
 }
 function hoverUpdate(){
     if(hovering != 0){
-        
+      
     }
 }
 
