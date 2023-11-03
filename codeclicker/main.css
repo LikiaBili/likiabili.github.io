@@ -1,0 +1,163 @@
+*{
+    margin: 0px;
+}
+body{
+    background: linear-gradient(to right,rgb(20,20,20),rgb(10,10,10));
+    display: flex;
+}
+p{
+    color: rgb(230,230,230);
+}
+a{
+    color: white;
+}
+p.rightBigText{
+    background-image: url("img/ui/RightTextBackground.png");
+    background-clip: padding-box;
+    height: 68px;
+    background-size: contain;
+    font-size: 25px;
+    color:rgb(240,240,240);
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 35px;
+    padding-right: 15px;
+    background-repeat: no-repeat;
+    margin-bottom:-20px;
+}
+h1{
+    color: rgb(200,200,200);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+div.mainbar{
+    margin-top: 50px;
+    background-color: rgb(30,30,30);
+    text-align: center;
+    top:10%;
+    height: fit-content;
+    transition-timing-function: ease-in-out;
+}
+p.midtext{
+    font-size: x-large;
+}
+p.smltext{
+    font-size: medium;
+}
+img.console{
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    transition: margin-top 0.15s,width 0.15s,height 0.15s;
+    justify-content: center;
+}
+#console:checked + label > img {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+}
+img.console:hover{
+    margin-top: 35px;
+    width: 230px;
+    height: 230px;
+}
+*.center{
+    display: flex;
+    justify-content: center;
+}
+div.border{
+    height: 100%;
+    width: 18px;
+    background-color: rgb(0,0,0);
+}
+div.leftBlock{
+    width: 30%;
+}
+div.middleBlock{
+    position: absolute;
+    left:30%;
+    right: 318px;
+}
+div.rightBlock{
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    max-width: 400px;
+    width: 30%;
+}
+div.buildingBlock{
+    height: 45px;
+    width: 95%;
+    margin-top: 2.5px;
+    margin-left: 2.5%;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgb(40,40,40);
+    transition: background-color 0.1s,height 0.1s,width 0.1s,margin-top 0.1s,margin-left 0.1s,border-radius 0.1s;
+    display: flex;
+}
+div.buildingBlock:hover{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(60,60,60);
+    margin-top: 0;
+    margin-left: 0;
+}
+img.buildingIcon{
+    height: 100%;
+    filter: drop-shadow(1px 1px 3px white) drop-shadow(-1px -1px 3px white);
+}
+div.buildingTextBox{
+    height: 100%;
+    width: fit-content;
+    margin-left: 10px;
+}
+p.buildingTitle{
+    color: white;
+    font-size: 20px;
+}
+p.buildingDesc{
+    color: white;
+    font-size: 12px;
+}
+div.hoverTooltip{
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    width: fit-content;
+    height: fit-content;
+    max-width: 350px;
+    border-radius: 20px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    padding: 10px;
+    background-color: black;
+    z-index: 500;
+    display: none;
+}
+div.tooltipTop{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+img.tooltipIcon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(1px 1px 3px white) drop-shadow(-1px -1px 3px white);
+    display: inline-block;
+}
+h3.tooltipTitle{
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+    margin: auto 0 auto 10px;
+}
+p.tooltipDesc{
+    font-size: 14px;
+    color: white;
+}

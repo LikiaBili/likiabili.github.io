@@ -1,0 +1,146 @@
+*{
+    margin:0px;
+}
+body{
+    background:linear-gradient(
+            to right,
+            rgb(40,40,40),rgb(20,20,20)
+    );
+}
+img.center{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+p{
+    color:rgb(240,240,240);
+    font-family: 'Oxygen', sans-serif;
+}
+p.introText{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+h1{
+    color:rgb(240,240,240);
+}
+h1.title{
+    text-align:center;
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+h3{
+    color:rgb(240,240,240);
+    font-family: 'Oxygen', sans-serif;
+    display: inline-block
+}
+div.indexMenu{
+    width: 220px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    height: fit-content;
+    background: linear-gradient(to right,rgb(90,90,90),rgb(70,70,70));
+    border-radius: 16px;
+    padding: 10px;
+}
+h2.menuTitle{
+    color:rgb(240,240,240);
+    font-family: 'Oxygen', sans-serif;
+    display: inline-block
+}
+div.betaLabel{
+    border-radius: 16px;
+    background: linear-gradient(to right,rgb(240,0,0),rgb(220,0,0));
+    display: inline-block;
+    width: fit-content;
+    padding: 4px;
+    height: 100%;
+}
+div.plannedLabel{
+    border-radius: 16px;
+    background: linear-gradient(to right,rgb(235,150,90),rgb(220,120,50));
+    display: inline-block;
+    width: fit-content;
+    padding: 4px;
+    height: 100%;
+}
+div.indevLabel{
+    border-radius: 16px;
+    background: linear-gradient(to right,rgb(240,240,80),rgb(220,220,80));
+    display: inline-block;
+    width: fit-content;
+    padding: 4px;
+    height: 100%;
+}
+p.label{
+    margin-left: 5px;
+    font-family: 'Oxygen', sans-serif;
+    margin-right: 5px;
+}
+div.halfList{
+    padding: 0px;
+    min-width: 250px;
+    margin-top: 30px;
+}
+div.everything{
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    vertical-align: middle;
+}
+div.mainList{
+    height:fit-content;
+    max-width: 500px;
+    min-width: 250px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+div.logBackground{
+    margin-top: 10px;
+    width: 90%;
+    height: 10%;
+    border-radius: 16px;
+    background: linear-gradient(to right,rgb(70,70,70),rgb(50,50,50));
+    color: white;
+    padding: 10px;
+    box-shadow: rgb(0,0,0) 0px 0px 5px,inset rgba(200,200,200,0.6) -1px 1px 5px;
+    transition: all 100ms;
+}
+div.logBackground:hover{
+    width: 90%;
+    background: linear-gradient(to right,rgb(60,60,60),rgb(60,60,60));
+    box-shadow: rgb(0,0,0) -1px 1px 5px,inset rgba(200,200,200,0.6) -3px 3px 10px;
+ }
+div.devlogTitle{
+    display: flex;
+    width: 100%;
+}
+div.spilt{
+    width:100%;
+    height:3px;
+    background: linear-gradient(to right,rgb(60,60,60),rgb(50,50,50));
+    border-radius: 2px;
+    margin-top: 3px;
+    margin-bottom: 5px;
+    box-shadow: rgba(0,0,0,0.3) 1px 1px 2px;
+}
+div.hoverShadow{
+    box-shadow: rgb(60,60,60) 1px 1px 5px,inset rgba(255,255,255,0.5) -3px 3px 15px;
+    transition: all 100ms;
+}
+div.hoverShadow:hover{
+    box-shadow: rgb(60,60,60) 3px 3px 10px,inset rgba(255,255,255,0.8) -5px 5px 20px;
+}
+a{
+    color:white;
+}
+p.motd{
+    margin: 20px auto 20px auto;
+    text-align: center;
+}

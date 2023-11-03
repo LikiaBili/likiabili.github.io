@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Code Clicker</title>
+    <script src="main.js" defer></script>
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=Oxygen:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--The following div with id="LoadingScreen" should be removed when the script is done loading-->
+    <div style="width: 100%;height: 100%;position: fixed;background-color: black;z-index: 1000;" id="LoadingScreen">
+        <h1 style="text-align: center;margin: auto;">L0ading...</h1>
+        <h1 style="text-align: center;margin: auto;">If this dosen't load shortly, check if your javascript is enabled</h1>
+    </div>
+
+    <p style="position: absolute;bottom: 0;left:0;">Really Early Indev v0.2 / REIv0.2 (Your game do not save!) <a href="../">Back</a>/<a href="../devlog/bid2">Update Devlog</a></p>
+    <div class="hoverTooltip" id="hoverTooltip">
+        <div class="tooltipTop">
+            <img class="tooltipIcon" id="hoverIcon">
+            <h3 class="tooltipTitle" id="hoverTitle">Lorem ipsum</h3>
+        </div>
+        <p class="tooltipDesc" id="hoverDesc">Lorem ipsum Lorem ipsum</p>
+    </div>
+
+    <div class="leftBlock">
+        <div class="mainbar">
+            <p class="midtext" id="bytesDisplay">0 bytes</p>
+            <p class="smltext" id="linesDisplay">0 lines</p>
+            <p class="smltext" id="bpsDisplay"></p>
+        </div>
+        <div class="center">
+            <img src="img/console.png" class="console" onclick="handleClick()" id="console">
+        </div>
+    </div>
+    <div class="middleBlock">
+    </div>
+    <div class="rightBlock">
+        <p class="rightBigText">Buildings</p>
+        <div class="buildingBlock" onclick="buyBuilding('keyboard')" onmouseover="hoverIn('build_1_shop')" onmouseout="hoverOut('build_1_shop')">
+            <img class="buildingIcon" src="img/buildings/keyboard.png">
+            <div class="buildingTextBox">
+                <p class="buildingTitle">Keyboard</p>
+                <p class="buildingDesc" id="keyboard_cost">Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="buildingBlock" onclick="buyBuilding('programmer')" onmouseover="hoverIn('build_2_shop')" onmouseout="hoverOut('build_2_shop')">
+            <img class="buildingIcon" src="img/console.png">
+            <div class="buildingTextBox">
+                <p class="buildingTitle">Programmer</p>
+                <p class="buildingDesc" id="programmer_cost">Lorem ipsum</p>
+            </div>
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+        <div class="buildingBlock">
+
+        </div>
+    </div>
+</body>
+</html>
