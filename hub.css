@@ -102,19 +102,20 @@ div.mainList{
     margin-right: auto;
 }
 div.logBackground{
+    margin-top: 10px;
     width: 90%;
     height: 10%;
     border-radius: 16px;
     background: linear-gradient(to right,rgb(70,70,70),rgb(50,50,50));
     color: white;
     padding: 10px;
-    box-shadow: rgb(0,0,0) 0px 0px 5px,inset rgba(200,200,200,0.1) -1px 1px 5px;
+    box-shadow: rgb(0,0,0) 0px 0px 5px,inset rgba(200,200,200,0.6) -1px 1px 5px;
     transition: all 100ms;
 }
 div.logBackground:hover{
     width: 90%;
     background: linear-gradient(to right,rgb(60,60,60),rgb(60,60,60));
-    box-shadow: rgb(0,0,0) -1px 1px 5px,inset rgba(200,200,200,0.3) -3px 3px 10px;
+    box-shadow: rgb(0,0,0) -1px 1px 5px,inset rgba(200,200,200,0.6) -3px 3px 10px;
  }
 div.devlogTitle{
     display: flex;
@@ -130,9 +131,16 @@ div.spilt{
     box-shadow: rgba(0,0,0,0.3) 1px 1px 2px;
 }
 div.hoverShadow{
-    box-shadow: rgb(60,60,60) 1px 1px 5px,inset rgba(200,200,200,0.3) 3px 3px 10px;
+    box-shadow: rgb(60,60,60) 1px 1px 5px,inset rgba(255,255,255,0.5) -3px 3px 15px;
     transition: all 100ms;
 }
 div.hoverShadow:hover{
-    box-shadow: rgb(60,60,60) 3px 3px 10px,inset rgba(255,255,255,0.5) 3px 3px 10px;
+    box-shadow: rgb(60,60,60) 3px 3px 10px,inset rgba(255,255,255,0.8) -5px 5px 20px;
+}
+a{
+    color:white;
+}
+p.motd{
+    margin: 20px auto 20px auto;
+    text-align: center;
 }
