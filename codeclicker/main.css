@@ -85,7 +85,7 @@ div.rightBlock{
     right: 0px;
     overflow-x: hidden;
     overflow-y: scroll;
-    max-width: 300px;
+    max-width: 400px;
     width: 30%;
 }
 div.buildingBlock{
@@ -108,6 +108,7 @@ div.buildingBlock:hover{
 }
 img.buildingIcon{
     height: 100%;
+    filter: drop-shadow(1px 1px 3px white) drop-shadow(-1px -1px 3px white);
 }
 div.buildingTextBox{
     height: 100%;
@@ -125,10 +126,38 @@ p.buildingDesc{
 div.hoverTooltip{
     top: 0px;
     left: 0px;
-    position: absolute;
+    position: fixed;
     width: fit-content;
     height: fit-content;
-    border-radius: 8px;
-    border-width: 2px;
+    max-width: 350px;
+    border-radius: 20px;
+    border-width: 3px;
     border-color: white;
+    border-style: solid;
+    padding: 10px;
+    background-color: black;
+    z-index: 500;
+    display: none;
+}
+div.tooltipTop{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    margin: 0 0 10px 0;
+}
+img.tooltipIcon {
+    width: 50px;
+    height: 50px;
+    filter: drop-shadow(1px 1px 3px white) drop-shadow(-1px -1px 3px white);
+    display: inline-block;
+}
+h3.tooltipTitle{
+    font-size: 24px;
+    display: inline-block;
+    color: white;
+    margin: auto 0 auto 10px;
+}
+p.tooltipDesc{
+    font-size: 14px;
+    color: white;
 }
