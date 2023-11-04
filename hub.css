@@ -144,3 +144,16 @@ p.motd{
     margin: 20px auto 20px auto;
     text-align: center;
 }
+img.icon{
+    filter: drop-shadow(1px 1px 2px rgba(255,255,255,0.3)) drop-shadow(-1px -1px 2px rgba(255,255,255,0.3));
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    gap:16px;
+    transition: all 0.1s;
+}
+img.icon:hover{
+    filter: drop-shadow(1px 1px 3px rgba(255,255,255,0.6)) drop-shadow(-1px -1px 3px rgba(255,255,255,0.6));
+    height: 55px;
+    width: 55px;
+}
