@@ -18,7 +18,7 @@ var hoverMessages = {
     }},
     build_2_shop:{get(){
         calcBuildingPrice('programmer');
-        return {icon:"img/console.png",
+        return {icon:"img/buildings/programmer.png",
                title:"Programmer",
             desc:"A nice programmer to code.<br><br>" +
                 "You owned "+buildings['programmer']['amount']+" which is making "+buildings['programmer']['bps'] * buildings['programmer']['amount']+" bytes per second <br>" +
