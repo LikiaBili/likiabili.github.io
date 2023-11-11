@@ -274,7 +274,8 @@ function generateSavegameCode(){
     return encryptSave(saveCode);
 }
 function saveGame(){
-    document.cookie = "savegame=" + generateSavegameCode() + ";saveVersion=REI1_0;";
+    document.cookie = "savegame=" + generateSavegameCode() + ";";
+    document.cookie = "saveVersion=REI1_0;";
     notification({
         title:"Game saved!",
         text:"Your game was saved to your cookie just now.",
