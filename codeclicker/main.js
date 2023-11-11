@@ -158,7 +158,7 @@ function tenPerSecondUpdate(){
     document.getElementById("bytesDisplay").innerText = Math.round(bytes) + " bytes";
     document.getElementById("linesDisplay").innerText = Math.round(codes) + " lines";
     if(bps !== 0) {
-        document.getElementById("bpsDisplay").innerText = "bps: " + Math.round(bps);
+        document.getElementById("bpsDisplay").innerText = "bps: " + bps;
     }else{
         document.getElementById("bpsDisplay").innerText = "";
     }
@@ -274,7 +274,8 @@ function generateSavegameCode(){
     return encryptSave(saveCode);
 }
 function saveGame(){
-    document.cookie = "savegame=" + generateSavegameCode() + ";saveVersion=REI1_0; Secure";
+    document.cookie = "savegame=" + generateSavegameCode() + ";";
+    document.cookie = "saveVersion=REI1_0;";
     notification({
         title:"Game saved!",
         text:"Your game was saved to your cookie just now.",
