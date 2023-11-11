@@ -4,12 +4,19 @@
   <meta charset="UTF-8">
   <title>Likia Studios Devlog / Javascript Blast!</title>
   <link rel="stylesheet" href="../blog.css">
+  <link href="../../font.css" rel="stylesheet">
+  <script src="../blog.js"></script>
 </head>
 <body>
   <div class="everything">
     <h1 class="title">Javascript Blast!</h1>
     <div class="spilt"></div>
-    <p class="introText">2023-11-4 3:05:01 + 3:46:20 / General / Posted by Likia / bid2 / <a href="../../">Back</a></p>
+    <p class="introText">2023-11-4 3:05:01 + 3:46:20 / General / Posted by Likia / bid2 / <a href="../../" class="introText">Back</a> /
+      <select id="langSel" onchange="selectLang()">
+        <option value="english">English</option>
+        <option value="chinese">简体中文</option>
+      </select>
+    </p>
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
@@ -19,37 +26,69 @@
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
+
+    <div id="english">
     <p>Helo!!! Likia here again, now, this website is filled with more javascript (much cooler) and with a big update of <a href="../../codeclicker">Code Clicker</a>, providing hovering tooltip and the second building. These are the following changes that was made</p>
     <div class="invisSpilt"></div>
-    <p>雷猴啊！俺是Likia,最近这个网站被我充满了Javascript(更酷了)还有一个关于<a href="../../codeclicker">Code Clicker</a>的大更新！比方说支持鼠标悬停的API还有第二个建筑以及一些生活质量更新，接下来是具体内容</p>
-
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
     <h2>Code Clicker</h2>
     <ul>
-      <li><p>The second building / 第二个建筑: Programmer</p></li>
-      <li><p>Hovering Tooltip API / 鼠标悬停信息API</p></li>
-      <li><p>2 internal update functions / 两个内置更新函数</p></li>
-      <li><p>bps, bytes Algorithm Adjust / 算法更改</p></li>
-      <li><p>Buying buildings now have a 15% increase on price (Compounding) / 购买建筑现在需要增加15%的价格(累加)</p></li>
-      <li><p>Keyboard now have a new icon / 键盘图标重绘</p></li>
-      <li><p>Fixed 3 bugs / 修复了3个bug</p></li>
+      <li><p>The second building</p></li>
+      <li><p>Hovering Tooltip API</p></li>
+      <li><p>2 internal update functions</p></li>
+      <li><p>bps, bytes Algorithm Adjust</p></li>
+      <li><p>Buying buildings now have a 15% increase on price (Compounding)</p></li>
+      <li><p>Keyboard now have a new icon</p></li>
+      <li><p>Fixed 3 bugs</p></li>
     </ul>
     <div class="invisSpilt"></div>
 
-    <h2>Site / 网页</h2>
+    <h2>Site</h2>
     <ul>
-      <li><p>Now Live on <a href="http://likiastudios.com">LikiaStudios.com</a> / 现可通过<a href="http://likiastudios.com">LikiaStudios.com</a></p></li>
-      <li><p>Different devlogs now share the same .css file / 不同的博文现共享同一个.css文件</p></li>
-      <li><p>Fixed some compatibility issues on serveral pages / 在某些页面上修复了一些适配性问题</p></li>
-      <li><p>Motd / 随机主页文本</p></li>
+      <li><p>Now Live on <a href="http://likiastudios.com">LikiaStudios.com</a>!</p></li>
+      <li><p>Different devlogs now share the same .css file</p></li>
+      <li><p>Fixed some compatibility issues on serveral pages</p></li>
+      <li><p>Motd</p></li>
     </ul>
     <div class="invisSpilt"></div>
     <div class="invisSpilt"></div>
 
     <p>Enjoy! XD!</p>
     <p>P.S. The homepage structure haven't been edited too much</p>
-    <p>后记: 主页的结构其实没被大改</p>
+    </div>
+    <!-------------------------------------------------------------------------------------------------------------------------------------->
+    <div id="chinese" style="display: none;">
+
+      <p>雷猴啊！俺是Likia,最近这个网站被我充满了Javascript(更酷了)还有一个关于<a href="../../codeclicker">Code Clicker</a>的大更新！比方说支持鼠标悬停的API还有第二个建筑以及一些生活质量更新，接下来是具体内容</p>
+      <div class="invisSpilt"></div>
+      <div class="invisSpilt"></div>
+      <div class="invisSpilt"></div>
+      <h2>Code Clicker</h2>
+      <ul>
+        <li><p>第二个建筑: 程序员</p></li>
+        <li><p>鼠标悬停信息API</p></li>
+        <li><p>两个内置更新函数</p></li>
+        <li><p>bps,bytes算法更改</p></li>
+        <li><p>购买建筑现在需要增加15%的价格(累加)</p></li>
+        <li><p>键盘图标重绘</p></li>
+        <li><p>修复了3个bug</p></li>
+      </ul>
+      <div class="invisSpilt"></div>
+
+      <h2>网页</h2>
+      <ul>
+        <li><p>现可通过<a href="http://likiastudios.com">LikiaStudios.com</a>访问！</p></li>
+        <li><p>不同的博文现共享同一个.css文件</p></li>
+        <li><p>在某些页面上修复了一些适配性问题</p></li>
+        <li><p>随机主页文本</p></li>
+      </ul>
+      <div class="invisSpilt"></div>
+      <div class="invisSpilt"></div>
+
+      <p>Enjoy! XD!</p>
+      <p>后记: 主页的结构其实没被大改</p>
+    </div>
   </div>
 </body>
 </html>

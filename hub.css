@@ -1,5 +1,7 @@
 *{
     margin:0px;
+    text-decoration: none;
+    color:rgb(240,240,240);
 }
 body{
     background:linear-gradient(
@@ -14,7 +16,6 @@ img.center{
 }
 p{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
 }
 p.introText{
     width: 500px;
@@ -35,7 +36,6 @@ h1.title{
 }
 h3{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block
 }
 div.indexMenu{
@@ -50,32 +50,35 @@ div.indexMenu{
 }
 h2.menuTitle{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block
 }
-div.betaLabel{
-    border-radius: 16px;
-    background: linear-gradient(to right,rgb(240,0,0),rgb(220,0,0));
-    display: inline-block;
+div.linkContainer{
     width: fit-content;
-    padding: 4px;
-    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
 }
-div.plannedLabel{
-    border-radius: 16px;
-    background: linear-gradient(to right,rgb(235,150,90),rgb(220,120,50));
+div.topLinks{
+    border-radius: 8px;
+    background: linear-gradient(to right,rgb(80,80,80),rgb(60,60,60));
     display: inline-block;
     width: fit-content;
-    padding: 4px;
-    height: 100%;
+    padding: 2px;
+    height: fit-content;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 div.indevLabel{
-    border-radius: 16px;
+    border-radius: 8px;
     background: linear-gradient(to right,rgb(240,240,80),rgb(220,220,80));
     display: inline-block;
     width: fit-content;
-    padding: 4px;
-    height: 100%;
+    padding: 2px;
+    height: fit-content;
+    color: black;
+    box-shadow: 0px 0px 3px 0px yellow;
+    font-size: 14px;
 }
 p.label{
     margin-left: 5px;

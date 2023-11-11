@@ -1,5 +1,9 @@
 *{
-    margin: 0px;
+    margin: 0;
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox? */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
 }
 body{
     background: linear-gradient(to right,rgb(20,20,20),rgb(10,10,10));
@@ -10,6 +14,9 @@ p{
 }
 a{
     color: white;
+}
+img{
+    image-rendering: pixelated;
 }
 p.rightBigText{
     background-image: url("img/ui/RightTextBackground.png");
@@ -96,7 +103,7 @@ div.buildingBlock{
     border-radius: 8px;
     padding: 10px;
     background-color: rgb(40,40,40);
-    transition: background-color 0.1s,height 0.1s,width 0.1s,margin-top 0.1s,margin-left 0.1s,border-radius 0.1s;
+    transition: all 0.1s, box-shadow 0.2s;
     display: flex;
 }
 div.buildingBlock:hover{
@@ -116,12 +123,20 @@ div.buildingTextBox{
     margin-left: 10px;
 }
 p.buildingTitle{
+    display: inline-block;
     color: white;
     font-size: 20px;
 }
 p.buildingDesc{
     color: white;
     font-size: 12px;
+}
+p.buildingCount{
+    font-size: 20px;
+    color: rgba(255,255,255,0.5);
+    margin-right: 2px;
+    display: inline-block;
+    width: auto;
 }
 div.hoverTooltip{
     top: 0px;
@@ -160,4 +175,38 @@ h3.tooltipTitle{
 p.tooltipDesc{
     font-size: 14px;
     color: white;
+}
+div.popupList{
+    position: fixed;
+    width: fit-content;
+    max-width : 20%;
+    height: fit-content;
+    bottom: 0;
+    z-index: 400;
+}
+div.notifyPopup{
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    padding: 10px;
+    background-color: black;
+    margin-bottom: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+div.close{
+    width:24px;
+    height:24px;
+    border-radius: 8px;
+    border-width: 3px;
+    border-color: white;
+    border-style: solid;
+    background-color: black;
+    right: -4px;
+    bottom: -2px;
+    padding: 3px;
+    position: absolute;
 }

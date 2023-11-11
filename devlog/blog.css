@@ -33,9 +33,12 @@ img.center{
     margin-right: auto;
     display: block;
 }
+a{
+    text-decoration: underline;
+}
 p{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
 }
 p.introText{
     width: 100%;
@@ -47,7 +50,6 @@ p.introText{
 }
 h1{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block
 }
 h1.title{
@@ -58,18 +60,16 @@ h1.title{
 }
 h3{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block
 }
 h2{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block
 }
 a{
     color:rgb(240,240,240);
-    font-family: 'Oxygen', sans-serif;
     display: inline-block;
+    font-size: 20px;
 }
 a.introText{
     font-size: 15px;
