@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Splatools 3!</title>
+    <link rel="stylesheet" href="splatool.css">
+    <script src="splatool.js" defer></script>
+</head>
+<body>
+    <p class="watermark"><a href="../">Back</a><br>Website page made by Likia, banner image was originally "Splatoon3"<br>The "Splatoon3" trademark and font "Splatfont" belongs to Nintendo</p>
+    <img class="title" src="title.png">
+
+    <div class="block">
+        <div class="header">
+            <img class="bigIcon" src="icons/anarchy.png">
+            <h1 class="vertCenter">Anarchy Battle (Series) Points Calculator</h1>
+        </div>
+        <div class="spilt"></div>
+        <div class="inline" style="gap:100px;">
+            <div class="vert">
+                <h2 class="centerText" style="color: rgb(250,250,100)">Rank</h2>
+                <h1 class="centerText" onclick="set('anarchyPoints','base',20)" id="ap_rank1" style="background:no-repeat center/100% url('img/ui/selectedBg.png');color:black;">⠀⠀C⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','base',30)" id="ap_rank2">⠀⠀B⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','base',40)" id="ap_rank3">⠀⠀A⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','base',50)" id="ap_rank4">⠀⠀S⠀⠀</h1>
+            </div>
+            <div class="vert">
+                <h2 class="centerText" style="color: rgb(250,250,100)">Wins!!</h2>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',0)" id="ap_win0" style="background:no-repeat center/100% url('img/ui/selectedBg.png');color:black;">0</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',1)" id="ap_win1">⠀⠀1⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',2)" id="ap_win2">⠀⠀2⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',3)" id="ap_win3">⠀⠀3⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',4)" id="ap_win4">⠀⠀4⠀⠀</h1>
+                <h1 class="centerText" onclick="set('anarchyPoints','wins',5)" id="ap_win5">⠀⠀5⠀⠀</h1>
+            </div>
+            <div class="vert">
+                <h2 class="centerText" style="color: rgb(250,250,100)">Medals</h2>
+                <div class="inline" style="gap:15px;">
+                    <img class="midIcon" src="icons/goldMedal.png">
+                    <div></div>
+                    <img class="midIcon" src="icons/arrowLeft5.png" onclick="add('anarchyPoints','gold',-5)">
+                    <img class="midIcon" src="icons/arrowLeft1.png" onclick="add('anarchyPoints','gold',-1)">
+                    <div></div>
+                    <h1 id="ap_gold">0</h1>
+                    <div></div>
+                    <img class="midIcon" src="icons/arrowRight1.png" onclick="add('anarchyPoints','gold',1)">
+                    <img class="midIcon" src="icons/arrowRight5.png" onclick="add('anarchyPoints','gold',5)">
+                </div>
+                <div class="inline" style="gap:15px;">
+                    <img class="midIcon" src="icons/silverMedal.png">
+                    <div></div>
+                    <img class="midIcon" src="icons/arrowLeft5.png" onclick="add('anarchyPoints','silver',-5)">
+                    <img class="midIcon" src="icons/arrowLeft1.png" onclick="add('anarchyPoints','silver',-1)">
+                    <div></div>
+                    <h1 id="ap_silver">0</h1>
+                    <div></div>
+                    <img class="midIcon" src="icons/arrowRight1.png" onclick="add('anarchyPoints','silver',1)">
+                    <img class="midIcon" src="icons/arrowRight5.png" onclick="add('anarchyPoints','silver',5)">
+                </div>
+                <div style="height:50px;"></div>
+                <h2 class="centerText" style="color: rgb(250,250,100)">Medal Templates</h2>
+                <div class="inline" style="gap:30px;">
+                    <h1 onclick="set('anarchyPoints','mode',0)" id="ap_temp0" style="background:no-repeat center/100% url('img/ui/selectedBg.png');color:black;">⠀Unset⠀</h1>
+                    <h1 onclick="set('anarchyPoints','mode',1)" id="ap_temp1">⠀Min⠀</h1>
+                    <h1 onclick="set('anarchyPoints','mode',2)" id="ap_temp2">⠀Avg.⠀</h1>
+                    <h1 onclick="set('anarchyPoints','mode',3)" id="ap_temp3">⠀Max⠀</h1>
+                </div>
+            </div>
+            <h1 class="XXL" id="ap_result" style="user-select: text;">= 0p</h1>
+        </div>
+    </div>
+    <div class="blockGap"></div>
+</body>
+</html>

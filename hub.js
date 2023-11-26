@@ -1,6 +1,6 @@
 const customMotd = ["We rise","Lorem ipsum","We are not just games","What the hell are you doing",
     "SMG4!!!!!!!!!!!!!!","THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END IS NEVER THE END",
-    "<a href='https://space.bilibili.com/14444480'>[[Hyperlink Blocked]]</a>"];
+    "<a href='https://space.bilibili.com/14444480'>[[Hyperlink Blocked]]</a>","Trivia: The longest function in Code Clicker is getBuildingHoverDataDescription();"];
 document.getElementById("motd").innerHTML = customMotd[Math.round(Math.random()*1000) % customMotd.length];
 const translation = {
     chinese:{
@@ -9,7 +9,10 @@ const translation = {
         switch_lang : "Switch to English",
         cc_desc : "受Cookie Clicker启发的一个围绕程序员和代码的策略类放置游戏",
         links_title : "咱的连接",
-        indev : "开发中"
+        indev : "开发中",
+        beta : "公测",
+        ppolicy : "隐私协议",
+        st_desc : "只有个真格比赛(挑战)的分数计算器lol"
     },
     english:{
         introText : "Likia Studios, A game studio with only Likia",
@@ -17,7 +20,10 @@ const translation = {
         switch_lang : "切换为中文",
         cc_desc: "A strategy incremental game, inspired by Cookie Clicker",
         links_title : "Some links",
-        indev : "Indev"
+        indev : "Indev",
+        beta : "Beta",
+        ppolicy : "Privacy Policy",
+        st_desc : "Only a Anarchy Battle (Series) points calculator lol"
     }
 }
 function getCookie(name){
@@ -57,7 +63,7 @@ function getCookie(name){
 }
 
 function setLanguage(lang){
-    document.cookie = "language="+lang+";";
+    document.cookie = "language="+lang+"; expires=Fri, 31 Dec 9999 23:59:59 GMT; path=/";
     location.reload();
 }
 
@@ -78,7 +84,7 @@ if(getCookie("language") == null){
 }
 
 for(key in translation[language]){
-    if(document.getElementById("gtrans_"+key) != null) {
+    try{
         document.getElementById("gtrans_" + key).innerHTML = translation[language][key];
-    }
+    }catch{}
 }
