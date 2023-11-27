@@ -12,7 +12,7 @@ const translation = {
         indev : "开发中",
         beta : "公测",
         ppolicy : "隐私协议",
-        st_desc : "只有个真格比赛(挑战)的分数计算器lol"
+        st_desc : "一些Splatoon 3的数据计算器,比如真格比赛(挑战)的分数和熊先生点数计算器"
     },
     english:{
         introText : "Likia Studios, A game studio with only Likia",
@@ -23,7 +23,7 @@ const translation = {
         indev : "Indev",
         beta : "Beta",
         ppolicy : "Privacy Policy",
-        st_desc : "Only a Anarchy Battle (Series) points calculator lol"
+        st_desc : "Some Splatoon 3 data calculators, such as Anarchy Battle (Series) Points and Grizzco Points Calculator"
     }
 }
 function getCookie(name){

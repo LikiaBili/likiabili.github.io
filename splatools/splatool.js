@@ -63,6 +63,47 @@ var anarchyPoints = {
         document.getElementById("ap_temp"+this.mode).style.color = "black";
     }
 }
+
+var salmonNextPoints = {
+    gold:0,
+    power:0,
+    rank:1,
+    rankp:0,
+    wave:0,
+    onChange() {
+        if(this.rank < 9 && this.rankp >= 100){
+                this.rankp = 50;
+        }else if(this.rankp >= 1000){
+            this.rankp = 950;
+        }
+
+        for(i = 1;i <= 9;i++){
+            document.getElementById("snp_rank"+i).style.background = "";
+            document.getElementById("snp_rank"+i).style.color = "white";
+        }
+        for(i = 0;i <= 4;i++){
+            document.getElementById("snp_wave"+i).style.background = "";
+            document.getElementById("snp_wave"+i).style.color = "white";
+        }
+        document.getElementById("snp_power").innerText = this.power;
+        document.getElementById("snp_gold").innerText = this.gold;
+        document.getElementById("snp_rp").innerText = "≥"+this.rankp;
+
+        document.getElementById("snp_rank"+this.rank).style.background = "no-repeat center/100% url('img/ui/selectedBg.png')";
+        document.getElementById("snp_rank"+this.rank).style.color = "black";
+        document.getElementById("snp_wave"+this.wave).style.background = "no-repeat center/100% url('img/ui/selectedBg.png')";
+        document.getElementById("snp_wave"+this.wave).style.color = "black";
+
+        let multi = this.rank*0.1 + 1.4 + Math.floor(this.rankp / 50) * 0.05;
+        let add = Math.max(this.wave-2,0)*50;
+        let eggp = this.gold + this.power/200;
+        document.getElementById("snp_rmt").innerText = multi.toFixed(2)+"*";
+        document.getElementById("snp_regg").innerText = eggp;
+        document.getElementById("snp_rwv").innerText = "+"+add;
+        document.getElementById("snp_result").innerText = "⠀≈⠀"+(eggp*multi+add)+"p";
+    }
+};
+
 function set(type,attr,value){
     window[type][attr] = value;
     window[type].onChange();
