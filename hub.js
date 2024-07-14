@@ -12,7 +12,7 @@ const translation = {
         indev : "开发中",
         beta : "公测",
         ppolicy : "隐私协议",
-        st_desc : "一些Splatoon 3的数据计算器,比如真格比赛(挑战)的分数和熊先生点数计算器"
+        st_desc : "一些Splatoon 3的数据计算器,比如真格比赛(挑战)的分数和熊先生点数计算器",
         notif_edge : "Edge项目Beta现已发布！点击这里访问！"
     },
     english:{
@@ -24,8 +24,8 @@ const translation = {
         indev : "Indev",
         beta : "Beta",
         ppolicy : "Privacy Policy",
-        st_desc : "Some Splatoon 3 data calculators, such as Anarchy Battle (Series) Points and Grizzco Points Calculator"
-        notif_edge : "The Edge Project is released! Click here!"
+        st_desc : "Some Splatoon 3 data calculators, such as Anarchy Battle (Series) Points and Grizzco Points Calculator",
+        notif_edge : "The Edge Project Beta is released! Click here!"
     }
 }
 function getCookie(name){
