@@ -170,3 +170,13 @@ img.icon:hover{
     height: 55px;
     width: 55px;
 }
+div.edgeNotification{
+    width: fit-content;
+    height: fit-content;
+    background-color: rgb(31 41 55);
+    outline: rgb(55 65 81) solid;
+    padding: 16px 64px 16px 64px;
+    margin: 16px auto 16px auto;
+    border-radius: 10% 3% 10% 3% / 90% 10% 90% 10% ;
+    font-size: large;
+}
